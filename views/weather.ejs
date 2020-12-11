@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="/css/master.css">
+    <title>weather app</title>
+  </head>
+  <body>
+    <div class="location">
+      <h1 class="location-Timezone"><%= name %>,<%= country %></h1>
+      <img src=<%= imgURL %> alt="icon">
+    </div>
+    <div class="temperature">
+      <div class="section-degrees">
+        <h2 class="temperature-degree"><%= temp %></h2>
+        <span>C</span>
+      </div>
+      <div class="description">
+
+        <p class="temperature-description">Description : <%= description  %>.</p>
+        <p class="temperature-description">Minimum temperature : <%= minTemp  %> <span>&#176;</span>C.</p>
+        <p class="temperature-description">Maximum temperature : <%= maxTemp  %> <span>&#176;</span>C.</p>
+        <p class="temperature-description">Pressure : <%= pressure  %> hPa.</p>
+        <p class="temperature-description">Humidity : <%= humidity  %> %. </p>
+        <p class="temperature-description">Wind speed : <%= speed  %> meter/sec.</p>
+
+      </div>
+
+    </div>
+  </body>
+</html>
